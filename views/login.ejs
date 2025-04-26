@@ -19,7 +19,8 @@
     <img src="/assets/bg.jpg" alt="Image" class="img-fluid" id="image-bg">
     <div class="card">
     <div class="container mt-5">
-        <h1 class="text-center fancy-text">Login</h1>
+    
+        <h1 class="text-center fancy-text">My Vinyl</h1>
         <form action="/login" method="POST" class="mt-4">
             <div class="mb-3">
                 <label for="username" class="form-label">Username:</label>
@@ -45,7 +46,7 @@
             // แล้วค่อยๆ เลื่อนกลับมาตำแหน่งเดิม
             setTimeout(() => {
                 img.classList.remove('animate-from-left');
-            }, 1000); // รอ 100ms เพื่อให้ browser apply class ก่อน
+            }, 500); // รอ 100ms เพื่อให้ browser apply class ก่อน
         });
     </script>
 </body>

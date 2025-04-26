@@ -25,11 +25,14 @@ app.get('/login', (req, res) => {
 app.get('/register', (req, res) => {
     res.render('register');
 });
-app
 
+app.get('/main', (req, res) => {
+    res.render('main');
+});
 
 app.post('/login',authController.loginUser);
 app.post('/register',authController.registerUser);
+
 
 app.listen(port, () => {
     console.log(`Server is running at http://localhost:${port}`);

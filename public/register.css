@@ -69,7 +69,7 @@ h1{
     border: 1px solid #ffffff;      /* เปลี่ยนสีขอบ */
     margin-bottom: 20px;
     background-color: #2e2e2e;          /* เปลี่ยนพื้นหลัง input */
-    color: #000000;                     /* เปลี่ยนสีตัวอักษร */
+    color: #ffffff;                     /* เปลี่ยนสีตัวอักษร */
 }
 .form-control:focus {
     border-color: #ffffff;           /* สีขอบตอน focus */
