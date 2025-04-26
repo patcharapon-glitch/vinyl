@@ -1,28 +1,24 @@
 body {
     min-height: 100vh;
     display: flex;
-    align-items: flex-start;
-    /* จัดให้อยู่ด้านบน */
-    justify-content: flex-start;
-    /* จัดให้อยู่ซ้าย */
+    align-items: flex-start;    /* จัดให้อยู่ด้านบน */
+    justify-content: flex-start; /* จัดให้อยู่ซ้าย */
     background: #f8f9fa;
     margin: 0;
 }
 
 .card {
-    width: 55vw;
-    /* กว้างขึ้นจากเดิม */
+    width: 55vw;                /* กว้างขึ้นจากเดิม */
     min-width: 320px;
     max-width: 600px;
     margin-top: 20px;
-    height: 95vh;
-    /* สูงเต็มหน้าจอ */
+    height: 95vh;              /* สูงเต็มหน้าจอ */
     padding: 32px 24px;
     background-color: rgba(23, 23, 23, 0.99);
     position: relative;
     z-index: 2;
 
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.9);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.9);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,23 +34,20 @@ body {
     left: 180px;
     z-index: 1;
     object-fit: cover;
-    transition: left 1s cubic-bezier(0.77, 0, 0.175, 1);
-    /* เพิ่ม transition */
+    transition: left 1s cubic-bezier(0.77,0,0.175,1); /* เพิ่ม transition */
 }
 
 #image.animate-from-left {
-    left: -1000px;
-    /* เริ่มต้นนอกจอซ้าย */
+    left: -1000px; /* เริ่มต้นนอกจอซ้าย */
 }
 
-h1 {
+h1{
     color: #fff;
     font-size: 72px;
     margin-bottom: 20px;
     margin-right: 40px;
     text-align: center;
 }
-
 .btn {
     background-color: #007bff00;
     color: white;
@@ -64,41 +57,32 @@ h1 {
     cursor: pointer;
     border-radius: 5px;
 }
-
 .form-label {
     color: #fff;
     font-size: 18px;
     margin-bottom: 10px;
 }
-
 .form-control {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid #ffffff;
-    /* เปลี่ยนสีขอบ */
+    border: 1px solid #ffffff;      /* เปลี่ยนสีขอบ */
     margin-bottom: 20px;
-    background-color: #2e2e2e;
-    /* เปลี่ยนพื้นหลัง input */
-    color: #000000;
-    /* เปลี่ยนสีตัวอักษร */
+    background-color: #2e2e2e;          /* เปลี่ยนพื้นหลัง input */
+    color: #000000;                     /* เปลี่ยนสีตัวอักษร */
 }
-
 .form-control:focus {
-    border-color: #ffffff;
-    /* สีขอบตอน focus */
+    border-color: #ffffff;           /* สีขอบตอน focus */
     background-color: #c6c6c6;
     color: #fff;
     box-shadow: 0 0 0 2px #ff416c33;
 }
-
 #image-bg {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    z-index: -1;
-    /* ทำให้ภาพอยู่ด้านหลัง */
+    z-index: -1; /* ทำให้ภาพอยู่ด้านหลัง */
 
 }
